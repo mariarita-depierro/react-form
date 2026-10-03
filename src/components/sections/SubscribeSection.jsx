@@ -4,12 +4,7 @@ il form e mostrando un messaggio di ringraziamento dopo l'invio*/
 import { FaceSlightlySmiling } from "lucide-react";
 import { useState } from "react";
 
-const FieldsValues = {
-  name: " ",
-  surname: " ",
-  email: " ",
-  feedback: " ",
-};
+import { FieldsValues } from "../../lib/vars";
 
 export default function SubscribeSection() {
   const [fields, setFields] = useState(FieldsValues);
@@ -69,7 +64,7 @@ export default function SubscribeSection() {
             onChange={handleSetFields}
           />
           {/* Email */}
-          <label htmlFor="email" className="form-label">
+          <label htmlFor="email" className="form-label mt-1">
             Email
           </label>
           <input
