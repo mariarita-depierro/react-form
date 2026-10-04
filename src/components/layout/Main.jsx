@@ -1,6 +1,7 @@
 import HourlyRateSection from "../sections/HourlyRateSection";
 import PromotionalCodeSection from "../sections/PromotionalCodeSection";
 import SubscribeSection from "../sections/SubscribeSection";
+import TableReservationSection from "../sections/TableReservationSection";
 import UserFeedbackSection from "../sections/UserFeedbackSection";
 
 export default function Main() {
@@ -22,13 +23,13 @@ export default function Main() {
         <div className="col-md-6">
           <HourlyRateSection />
         </div>
-        <div className="col-md-6">Ex 5</div>
+        <div className="col-md-6">
+          <TableReservationSection />
+        </div>
         <div className="col-md-6">Ex 6</div>
       </div>
     </main>
   );
 }
 
-/* 5. registra i dati di prenotazione del tavolo confermando all'utente i dettagli inseriti (nome, n. ospiti e data) in una scheda di riepilogo
- */
 /* 6. crea una rubrica telefonica consentendo l'inserimento di nuovi nominativi e la loro eliminazione */
