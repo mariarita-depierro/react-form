@@ -4,10 +4,10 @@ il form e mostrando un messaggio di ringraziamento dopo l'invio*/
 import { FaceSlightlySmiling } from "lucide-react";
 import { useState } from "react";
 
-import { FieldsValues } from "../../lib/vars";
+import { fieldsValues } from "../../lib/vars";
 
 export default function SubscribeSection() {
-  const [fields, setFields] = useState(FieldsValues);
+  const [fields, setFields] = useState(fieldsValues);
 
   function handleSetFields(e) {
     const { value, name } = e.target;
@@ -22,7 +22,7 @@ export default function SubscribeSection() {
     setIsSubmitted(true);
 
     //Reset
-    setFields(FieldsValues);
+    setFields(fieldsValues);
   }
 
   return (

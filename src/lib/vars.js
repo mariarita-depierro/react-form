@@ -1,5 +1,5 @@
 //SubscribeSection
-export const FieldsValues = {
+export const fieldsValues = {
   name: " ",
   surname: " ",
   email: " ",
@@ -19,5 +19,34 @@ export const discountCodes = [
   {
     code: "SCONTO50",
     discount: 50,
+  },
+];
+
+//UserFeedbackSection
+export const votes = [
+  {
+    id: 1,
+    label: "Pessimo",
+    stars: "⭐",
+  },
+  {
+    id: 2,
+    label: "Scarso",
+    stars: "⭐⭐",
+  },
+  {
+    id: 3,
+    label: "Sufficiente",
+    stars: "⭐⭐⭐",
+  },
+  {
+    id: 4,
+    label: "Buono",
+    stars: "⭐⭐⭐⭐",
+  },
+  {
+    id: 5,
+    label: "Eccellente",
+    stars: "⭐⭐⭐⭐⭐",
   },
 ];
