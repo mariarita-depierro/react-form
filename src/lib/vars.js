@@ -50,3 +50,14 @@ export const votes = [
     stars: "⭐⭐⭐⭐⭐",
   },
 ];
+
+//PhonebookSection
+export const fieldsPhonebook = {
+  name: "",
+  surname: "",
+  number: "",
+};
+
+export const contacts = [
+  { id: 1, name: "Marco", surname: "Rossi", number: 1234567891 },
+];

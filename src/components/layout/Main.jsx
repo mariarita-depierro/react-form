@@ -1,4 +1,5 @@
 import HourlyRateSection from "../sections/HourlyRateSection";
+import PhonebookSection from "../sections/PhonebookSection";
 import PromotionalCodeSection from "../sections/PromotionalCodeSection";
 import SubscribeSection from "../sections/SubscribeSection";
 import TableReservationSection from "../sections/TableReservationSection";
@@ -26,10 +27,10 @@ export default function Main() {
         <div className="col-md-6">
           <TableReservationSection />
         </div>
-        <div className="col-md-6">Ex 6</div>
+        <div className="col-md-6">
+          <PhonebookSection />
+        </div>
       </div>
     </main>
   );
 }
-
-/* 6. crea una rubrica telefonica consentendo l'inserimento di nuovi nominativi e la loro eliminazione */

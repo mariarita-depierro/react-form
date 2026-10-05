@@ -5,7 +5,7 @@ import { FaceSlightlySmiling } from "lucide-react";
 import { Utensils } from "lucide-react";
 import { useState } from "react";
 
-const fieldsValues = {
+const fieldsTableReservation = {
   name: " ",
   surname: " ",
   numberGuests: "",
@@ -13,7 +13,7 @@ const fieldsValues = {
 };
 
 export default function TableReservationSection() {
-  const [fields, setFields] = useState(fieldsValues);
+  const [fields, setFields] = useState(fieldsTableReservation);
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
