@@ -5,6 +5,7 @@ import { BookUser } from "lucide-react";
 import { useState } from "react";
 import { fieldsPhonebook } from "../../lib/vars";
 import { contacts } from "../../lib/vars";
+import { Trash } from "lucide-react";
 
 export default function PhonebookSection() {
   const [fields, setFields] = useState(fieldsPhonebook);
@@ -75,7 +76,7 @@ export default function PhonebookSection() {
           name="number"
           onChange={handleSetFields}
         />
-        <button type="submit" className="btn btn-secondary mt-3">
+        <button type="submit" className="btn btn-dark mt-3">
           Add
         </button>
       </form>
@@ -91,7 +92,10 @@ export default function PhonebookSection() {
             className="mt-2 btn btn-danger"
             onClick={() => handleSetRemoveContact(element.id)}
           >
-            Remove
+            Remove{" "}
+            <span className="ms-1">
+              <Trash size={18} />
+            </span>
           </button>
         </div>
       ))}
